@@ -16,17 +16,17 @@ tuple4 = ("abc", 34, True, 40, "male")
 
 # Example 5 - access item
 thistuple = ("apple", "banana", "cherry")
-print(thistuple[1])
+print(thistuple[1])     # "apple"
 
 # Example 6 - negative indexing
 thistuple = ("apple", "banana", "cherry")
-print(thistuple[-1])
+print(thistuple[-1])    # cherry
 
 # Example 7 - range of indexing
 thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
-print(thistuple[2:5])
-print(thistuple[:4])
-print(thistuple[2:])
+print(thistuple[2:5])   # ('cherry', 'orange', 'kiwi')
+print(thistuple[:4])    # ('apple', 'banana', 'cherry', 'orange')
+print(thistuple[2:])    # ('cherry', 'orange', 'kiwi', 'melon', 'mango')
 
 # Example 8 - check if exist
 thistuple = ("apple", "banana", "cherry")
