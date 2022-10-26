@@ -5,7 +5,7 @@ import random
 # using function from random module
 
 # random - return a random a fload number between 0.0 to 1.0
-some_random_flot_number = random.random()
+some_random_float_number = random.random()
 
 # randint - return a random integer number between the giving range
 some_random_integer_number = random.randint(3, 9)
