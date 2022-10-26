@@ -58,5 +58,3 @@ list1 = ["apple", "banana"]
 list2 = ["cherry", "orange"]
 list3 = list1 + list2
 print(list3)  # ["apple", "banana", "cherry", "orange"]
-
-# Example 12 -
