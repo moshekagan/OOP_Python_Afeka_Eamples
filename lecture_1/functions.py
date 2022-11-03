@@ -46,7 +46,6 @@ def spi_example(name, country="Israel"):
   print(f"Hi I am {name} and im from {country}")
 
 spi_example("Avi")
-spi_example(country="India")
 spi_example("Rajab", "India")
 
 
@@ -56,12 +55,14 @@ def my_function6(food):
     print(x)
 
 fruits = ["apple", "banana", "cherry"]
-
 my_function6(fruits)
 # apple
 # banana
 # cherry
 
+my_function6(["pai", "ice cream"])
+# pai
+# ice cream
 
 # Example 7 - return value
 def my_function7(x):

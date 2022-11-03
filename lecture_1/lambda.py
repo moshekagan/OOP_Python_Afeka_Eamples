@@ -17,5 +17,11 @@ print(foo(5, 6))  # 30
 is_score_pass = lambda score: score >= 70
 scores = [70, 60, 80, 90, 50]
 results = filter(is_score_pass, scores)
-
 print(list(results))   # [70, 80, 90]
+
+# Same as above without variables
+results2 = filter(lambda score: score >= 70, [70, 60, 80, 90, 50])
+
+res = is_score_pass(50)     # res = False
+res2 = is_score_pass(90)     # res = True
+
