@@ -9,8 +9,8 @@ print(res2)     # 12
 
 
 # Example 3 - two arguments
-x = lambda a, b : a * b
-print(x(5, 6))  # 30
+foo = lambda a, b: a * b
+print(foo(5, 6))  # 30
 
 
 # Example 4 - filtering list
