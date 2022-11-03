@@ -41,8 +41,8 @@ my_function4("Brazil")
 
 
 # Example 6 - list as parameter
-def my_function6(fruits):
-  for x in fruits:
+def my_function6(food):
+  for x in food:
     print(x)
 
 fruits = ["apple", "banana", "cherry"]
