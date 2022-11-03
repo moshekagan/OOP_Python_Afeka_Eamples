@@ -14,7 +14,8 @@ print(foo(5, 6))  # 30
 
 
 # Example 4 - filtering list
+is_score_pass = lambda score: score >= 70
 scores = [70, 60, 80, 90, 50]
-filtered = filter(lambda score: score >= 70, scores)
+results = filter(is_score_pass, scores)
 
-print(list(filtered))   # [70, 80, 90]
+print(list(results))   # [70, 80, 90]

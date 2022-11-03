@@ -36,7 +36,7 @@ with open("example_csv_file.csv", mode='a') as csvfile:
 
     # read input from the user to insert as a new line to the file
     name = input("insert a student name: ")
-    grade = int(input("insert a student name: "))
+    grade = int(input("insert a student grade: "))
 
     # creating a list as a row of values
     row = [name, grade]

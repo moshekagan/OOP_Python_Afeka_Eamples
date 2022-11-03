@@ -20,7 +20,9 @@ my_function2("Lior")
 
 # Example 4 - number of parameters
 def my_function3(fname, lname):
-  print(fname + " " + lname)
+  msg = f"{fname} {lname}"
+  print(msg)
+
 
 my_function3("Donald", "Duck")
 # Donald Duck
@@ -38,6 +40,14 @@ my_function4("Brazil")
 # I am from India
 # I am from Israel
 # I am from Brazil
+
+
+def spi_example(name, country="Israel"):
+  print(f"Hi I am {name} and im from {country}")
+
+spi_example("Avi")
+spi_example(country="India")
+spi_example("Rajab", "India")
 
 
 # Example 6 - list as parameter
