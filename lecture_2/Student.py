@@ -10,6 +10,12 @@ class Student:
     def talk(self):
         print(f"Hi! my name is: {self.name}")
 
+    def __str__(self):
+        return f"{self.student_id}, {self.name}, {self.courses}"
+
+    def __repr__(self):
+        return str(self)
+
 
 # Create single student
 student_1 = Student("Arik", 1234, ["Python", "Math", "Economy"])
