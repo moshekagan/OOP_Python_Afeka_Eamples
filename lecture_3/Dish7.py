@@ -15,8 +15,9 @@ class Dish7:
     def add_ingredient(self, ingredient):
         """Add an ingredient to the dish."""
         if not self.can_add_ingredient():
-            return
+            return False
         self.ingredients.append(ingredient)
+        return True
 
     def remove_ingredient(self, ingredient):
         """Remove an ingredient from the dish."""
