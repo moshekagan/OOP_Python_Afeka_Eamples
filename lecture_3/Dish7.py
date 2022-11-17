@@ -4,7 +4,7 @@ class Dish7:
     def __init__(self, name, is_vegetarian, ingredients=[]):
         self.name = name
         self.is_vegetarian = is_vegetarian
-        self.ingredients = []
+        self.ingredients = ingredients
         for ingredient in ingredients:
             self.add_ingredient(ingredient)
 

@@ -10,4 +10,4 @@ ingredients = [
     Ingredient('Flour', carbs=79, fats=1.8, proteins=7),
 ]
 bread = Dish("Lembas Bread", is_vegetarian=True, ingredients=ingredients)
-print(bread)    #Lembas Bread has 1430.5 calories in it.
+print(bread)    # Lembas Bread has 1430.5 calories in it.
