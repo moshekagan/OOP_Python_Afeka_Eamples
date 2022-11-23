@@ -13,9 +13,10 @@ class Point:
         return self.x == other.x and self.y == other.y
 
 
-p1 = Point(-1, -1)
-p2 = Point(1, 1)
+if __name__ == '__main__':
+    p1 = Point(-1, -1)
+    p2 = Point(1, 1)
 
-print(p1 == p2)     # False
-print(p2 == Point(1, 1))    # True
+    print(p1 == p2)     # False
+    print(p2 == Point(1, 1))    # True
 
