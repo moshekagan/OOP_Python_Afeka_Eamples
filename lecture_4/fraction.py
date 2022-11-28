@@ -48,7 +48,7 @@ class Fraction:
         return self * Fraction(other.denom, other.num)
 
     def __float__(self):
-        return float(self.num / self.denom)
+        return self.num / self.denom
 
 
 if __name__ == '__main__':
@@ -58,13 +58,14 @@ if __name__ == '__main__':
     b = Fraction(3, 4)
     print(b)
     c = Fraction(1, 2)
-    print(b)
+    print(c)
+    d = Fraction(0, 0)
+    print(d)
     print()
 
     print("--- eq ---")
     print(a == b)
-    print(c != b)
-    print(a == Fraction(8, 4))
+    print(a == Fraction(6, 3))
     print()
 
     print("--- add ---")
@@ -77,4 +78,5 @@ if __name__ == '__main__':
     print(c / b)
     print("--- float ---")
     print(float(b))
+    print(float(Fraction(4, 2)))
     print(float(c / b))
