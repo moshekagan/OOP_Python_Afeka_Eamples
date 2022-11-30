@@ -19,8 +19,8 @@ class Student(Person):
         return f"{parent_msg}, {self.graduation_year}, {self.calculate_avg()}"
 
 
-p = Person("Ali", "Mohamed")
-s = Student("John", "Doe", 2025, [("Math", 90), ("Python", 95)])
-print(s)
-# John, Doe, 2025, 92.5
+if __name__ == '__main__':
+    s = Student("John", "Doe", 2025, [("Math", 90), ("Python", 95)])
+    print(s)
+    # John, Doe, 2025, 92.5
 
