@@ -1,3 +1,7 @@
+"""
+    Sort list of instances
+"""
+
 ls = ["Cherry", "Apple", "Blueberry"]
 
 print(sorted(ls))
