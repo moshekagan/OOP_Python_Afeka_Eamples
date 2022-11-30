@@ -10,4 +10,3 @@ class Developer(Employee):
 
     def __str__(self):
         return f"{super().__str__()} is a developer"
-
