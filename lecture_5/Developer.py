@@ -10,3 +10,16 @@ class Developer(Employee):
 
     def __str__(self):
         return f"{super().__str__()} is a developer"
+
+
+if __name__ == '__main__':
+    e = Employee("Avi", "Choen", 50000)
+    print(e.pay)
+    e.apply_raise()
+    print(f"{e.first} after {e.pay}")
+    print()
+
+    d = Developer("Yossi", "Levi", 50000, "Python")
+    print(d.pay)
+    d.apply_raise()
+    print(f"{d.first} after {d.pay}")

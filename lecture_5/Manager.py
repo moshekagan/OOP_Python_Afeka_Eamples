@@ -3,8 +3,8 @@ from lecture_5.Employee import Employee
 
 class Manager(Employee):
 
-    def __init__(self, first, last, pay, employees=None):
-        super().__init__(first, last, pay)
+    def __init__(self, first_name, last, pay, employees=None):
+        super().__init__(first_name, last, pay)
         if employees is None:
             self.employees = []
         else:

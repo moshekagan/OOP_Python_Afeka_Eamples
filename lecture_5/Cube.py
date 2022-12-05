@@ -1,4 +1,3 @@
-from lecture_5.Square import Square
 
 # cube class(subclass of Square)
 
@@ -13,7 +12,8 @@ class Cube(Square):
         return face_area * self.length
 
 
-cube = Cube(3)
-print(cube.surface_area())
+if __name__ == '__main__':
+    cube = Cube(3)
+    print(cube.surface_area())
 
-print(cube.volume())
+    print(cube.volume())

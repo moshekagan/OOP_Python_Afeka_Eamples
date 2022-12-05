@@ -14,13 +14,14 @@ class Student(Person):
 
         return sum_grades / len(self.courses)
 
-    def __str__(self):
-        parent_msg = super().__str__()
-        return f"{parent_msg}, {self.graduation_year}, {self.calculate_avg()}"
+    def print_name(self):
+        print(f"my name is {self.first_name}, {self.last_name} the avg: {self.calculate_avg()}")
 
 
 if __name__ == '__main__':
     s = Student("John", "Doe", 2025, [("Math", 90), ("Python", 95)])
-    print(s)
-    # John, Doe, 2025, 92.5
+    s.print_name()
+
+    p = Person("Avi", "Doe")
+    p.print_name()
 
