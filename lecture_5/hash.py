@@ -36,7 +36,7 @@ class Person:
         return self.name == other.name and self.age == other.age
 
     def __hash__(self):
-        return hash(tuple([self.name, self.age]))
+        return hash((self.name, self.age))
 
 
 p1 = Person('John', 22)
