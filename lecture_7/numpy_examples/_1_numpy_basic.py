@@ -22,14 +22,3 @@ print(b.shape)
 # Get type
 print(a.dtype)
 print(b.dtype)
-
-# Get Size
-print(a.itemsize)
-print(b.itemsize)
-
-# Get Total size
-print(a.nbytes)
-print(b.nbytes)
-
-
-
