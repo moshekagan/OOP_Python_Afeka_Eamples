@@ -26,7 +26,6 @@ print(f'the type of a is {type(a)}')
 print(f'the type of a elements is {a.dtype}')
 print(f'the size of a is {a.size}')  # Number of elements in the array.
 print(f'number of dimensions of a is {a.ndim}')  # Number of array dimensions.
-print(a.itemsize)
 print(f'{a.data}')  # Python buffer object pointing to the start of the array's data.
 
 # initializing arrays
