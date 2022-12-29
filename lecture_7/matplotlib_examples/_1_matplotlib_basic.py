@@ -9,8 +9,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Crate Basic graph
-x = [0, 1, 2, 3, 4]
-y = [0, 2, 4, 6, 8]
+x = np.array([0, 1, 2, 3, 4])
+y = np.array([0, 2, 4, 6, 8])
 
 plt.plot(x, y)
 
