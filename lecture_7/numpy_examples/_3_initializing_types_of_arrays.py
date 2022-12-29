@@ -43,6 +43,8 @@ print(a)
 a = np.array([[1, 2, 3]])
 r1 = np.repeat(a, 3, axis=0)
 print(r1)
+r2 = np.repeat(a, 3, axis=1)
+print(r2)
 
 # linspace - get X values with equal spaces between 2 numbers
 print(np.linspace(10, 20))   # 50 (default) values between 10 to 20

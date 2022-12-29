@@ -139,7 +139,7 @@ print(np.divide(a, b))
 
 l1 = [10, 20, 30]
 l2 = [100, 200, 300]
-print(l2 - l1)  # Error unsupported operand type(s) for -
+# print(l2 - l1)  # Error unsupported operand type(s) for -
 print(np.subtract(l2, l1))
 
 a = np.arange(20).reshape(4, 5)

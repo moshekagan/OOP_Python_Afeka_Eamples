@@ -5,34 +5,34 @@
    For more information, read [Cortez et al., 2009].
 
    Input variables (based on physicochemical tests):
-   1 - fixed acidity
-   2 - volatile acidity
-   3 - citric acid
-   4 - residual sugar
-   5 - chlorides
-   6 - free sulfur dioxide
-   7 - total sulfur dioxide
-   8 - density
-   9 - pH
-   10 - sulphates
-   11 - alcohol
-   12 - quality (score between 0 and 10)
+   1 - fixed acidity - חומצה קבועה
+   2 - volatile acidity - חומצה נדיפה
+   3 - citric acid - חומצת לימון
+   4 - residual sugar - שאריות סוכר
+   5 - chlorides - כלורידים
+   6 - free sulfur dioxide - דו תחמוצת גופרית
+   7 - total sulfur dioxide - סך דו תחמוצת הגופרית
+   8 - density - צפיפות
+   9 - pH - רמת חומציות
+   10 - sulphates - סולפטים
+   11 - alcohol - אלכוהול
+   12 - quality (score between 0 and 10) - איכות
 """
 
-# with list
+# # with list
 # import csv
-# with open('C:\\afeka\\csv\\winequality-red.csv', 'r') as f:
-#     wines = list(csv.reader(f, delimiter=';'))
+# with open('winequality-red.csv', 'r') as f:
+#     wines = list(csv.reader(f, delimiter=','))
 # print(wines[:3])
 #
 # qualities =[float(item[-1]) for item in wines[1:]]
 # print(sum(qualities) / len(qualities))
-
-# with numpy
-
+#
+# # with numpy
+#
 # import csv
-# with open("C:\\afeka\\csv\\winequality-red.csv", 'r') as f:
-#     wines = list(csv.reader(f, delimiter=";"))
+# with open("winequality-red.csv", 'r') as f:
+#     wines = list(csv.reader(f, delimiter=","))
 # import numpy as np
 # wines = np.array(wines[1:], dtype=float)
 # print(wines)
@@ -45,7 +45,6 @@ It’s possible to use NumPy to directly read csv or other files into arrays.
 In the below code, we:
 
 Use the genfromtxt function to read in the winequality-red.csv file.
-Specify the keyword argument delimiter=";" so that the fields are parsed properly.
 Specify the keyword argument skip_header=1 so that the header row is skipped.
 """
 
@@ -70,6 +69,7 @@ QUALITY_COL = 11
 wines = np.genfromtxt("winequality-red.csv", delimiter=",", skip_header=1)
 print(wines)
 w0 = wines.sum(axis=0)
+print(w0)
 print(w0.shape)
 print(w0.ndim)
 print(type(w0))
@@ -92,10 +92,11 @@ ph_levels = wines[:, PH_COL] > 3.5
 print(ph_levels)
 print()
 w = wines[ph_levels]
+print(w)
 print(w.shape)
 
-# Select only wines where sulphates > 10 and alcohol > 7
-sulalc = (wines[:, SULPHATES_COL] > 10) & (wines[:, ALCOHOL_COL] > 7)
+# Select only wines where sulphates > 0.7 and alcohol > 7
+sulalc = (wines[:, SULPHATES_COL] > 0.7) & (wines[:, ALCOHOL_COL] > 7)
 print(wines[sulalc, SULPHATES_COL:])
 print()
 

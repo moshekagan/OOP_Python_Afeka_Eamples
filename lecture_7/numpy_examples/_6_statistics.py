@@ -10,6 +10,9 @@ print(stats)
 
 print(np.min(stats))
 print(np.min(stats, axis=0))
+print(np.min([[1, 2, 3],
+              [4, 5, 6],
+              [0, 1, 5]], axis=0))
 print(np.min(stats, axis=1))
 
 print(np.max(stats))
