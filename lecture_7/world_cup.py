@@ -72,7 +72,11 @@ if __name__ == '__main__':
     data = np.genfromtxt("world_cup_res.csv", delimiter=",", skip_header=1, dtype=str)
 
     unique, counts = np.unique(data[:, 2], return_counts=True)
-    unique = [teams[t] for t in unique]  # replace names to English
+    unique = [teams[t] for t in unique]  # replace names to English (list comprehension python)
+    # n_unique = []
+    # for t in unique:
+    #     n_unique.append(teams[t])
+    # unique = n_unique
 
     results = np.vstack((unique, counts)).transpose()
 
