@@ -1,0 +1,2 @@
+class DateTimeError(Exception):
+    pass
