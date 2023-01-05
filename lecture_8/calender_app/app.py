@@ -55,7 +55,6 @@ year_combo.grid(row=current_row+1, column=3)
 
 current_row += 2
 
-
 # set time
 time_lbl = Label(window, text="Time", fg="blue")
 time_lbl.grid(row=current_row, column=0)
