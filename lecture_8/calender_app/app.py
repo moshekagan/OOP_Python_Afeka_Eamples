@@ -2,12 +2,11 @@ from tkinter import *
 from tkinter import ttk
 from tkinter import messagebox
 from lecture_8.calender_app.Calendar import Calender
-
-# Create instance of Calender
 from lecture_8.calender_app.DateTimeError import DateTimeError
 from lecture_8.calender_app.Meeting import Meeting
 from lecture_8.calender_app.validators import VALID_DAYS, VALID_MONTHS, VALID_YEARS, VALID_DURATION
 
+# Create instance of Calender
 calender = Calender()
 
 # New Window
@@ -60,7 +59,8 @@ current_row += 2
 time_lbl = Label(window, text="Time", fg="blue")
 time_lbl.grid(row=current_row, column=0)
 
-hour_lbl = Label(window, text="Hour").grid(row=current_row, column=1)
+hour_lbl = Label(window, text="Hour")
+hour_lbl.grid(row=current_row, column=1)
 hour_entry = Entry(window)
 hour_entry.grid(row=current_row+1, column=1)
 
