@@ -1,4 +1,5 @@
 .idea/
 venv/
-exam_backlog/
-exam_library/
+exam_EXAMPLE_library
+exam_X_backlog
+exam_Y_cinema/
